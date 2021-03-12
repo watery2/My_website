@@ -25,7 +25,12 @@ document.getElementById("button").onclick = function(){
 
     }
 }
-
+document.getElementsByClassName("aboutlink")[0].onclick = function(){
+    document.getElementById("about").scrollIntoView();
+}
+document.getElementsByClassName("link")[0].onclick = function(){
+    document.getElementById("about").scrollIntoView();
+}
 let tl = gsap.timeline({
     scrollTrigger:{
         trigger: '.img',
@@ -34,3 +39,13 @@ let tl = gsap.timeline({
 
 tl.from(".img", {y:-200, opacity: 0, duration: 1})
     .from(".whoiam", {x:100, opacity: 0, duration: 1}, "-=0.5")
+
+let ta = gsap.timeline({
+    scrollTrigger:{
+        trigger: '#about',
+        start: "center bottom",
+    }
+});
+
+ta.from(".aboutword", {y:-100, opacity: 0, duration: 1})
+    .to(".line", {width: "80px", duration: 1})
