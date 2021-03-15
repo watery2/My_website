@@ -80,10 +80,8 @@ html {
 }
 
 .img img {
-  border: 5px solid white;
   height: 500px;
   width: 500px;
-  border-radius: 20px;
 }
 
 .whoiam {
@@ -156,6 +154,14 @@ span {
 .aboutlink:hover {
   color: #141313;
   border: none;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #141313;
 }
 
 @media (max-width: 865px) {
