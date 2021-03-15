@@ -50,7 +50,7 @@ html{
 .link:hover{
     color: white;
 }
-.home{
+#home{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -81,7 +81,7 @@ html{
   
 }
 #about{
-    height: 100px;
+    height: 120px;
     padding: 30px;
     color: white;
     text-align: center;
@@ -133,13 +133,92 @@ span{
     color: rgb(20, 19, 19);
     border: none;
 }
+#contact{
+    width: 100%;
+    background: linear-gradient(to right,#46a0a0 0%,#51a574 20%,#a31f1f 40%,#471cad 100%);
+    height: 100vh;
+    text-align: center;
+}
+form{
+    display: inline-block;
+    margin-top: 20%;
+}
+.em{
+    //background-color: rgb(20, 19, 19);
+    background: transparentize(rgb(20, 19, 19), 0.5);
+    color: white;
+    border-radius: 30px;
+    border: 5px solid #232943;
+    outline: none;
+    width: 300px;
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+}
+.msg{
+    background: transparentize(rgb(20, 19, 19), 0.5);
+    color: white;
+    border-radius: 30px;
+    border: 5px solid #232943;
+    outline: none;
+    width: 500px;
+    height: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    resize: none;
+    margin-bottom: 20px;
+}
+.sub{
+    background: rgb(20, 19, 19);
+    color: white;
+    font-size: 30px;
+    border-radius: 30px;
+    border: 5px solid #232943;
+    outline: none;
+    width: 200px;
+    height: 70px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+}
+.sub:hover{
+    opacity: .7;
+}
+#footer{
+    height: 120px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(20, 19, 19);
 
+}
+.flinks{
+    text-decoration: none;
+    display: inline;
+}
+.flink{
+    margin-right: 5px;
+    cursor: pointer;
+    display: inline;
+    text-decoration: none;
+}
 ::-webkit-scrollbar{
-    width: 10px;
+    width: 20px;
 }
 ::-webkit-scrollbar-thumb{
-    background: rgb(20, 19, 19, 0.6);
+    //background-color: rgb(27, 26, 26);
+    background: linear-gradient(to bottom,#46a0a0 0%,#51a574 20%,#a31f1f 40%,#471cad 100%);
     border-radius: 20px;
+    
+}
+
+::-webkit-scrollbar-track{
+    background: black;
+    //border: 7px solid #232943;
 }
 
   
@@ -147,7 +226,7 @@ span{
     .whoiam {
         margin-top: -300px;
     }
-    .home {
+    #home {
         height: 150vh;
     }
 }
@@ -159,6 +238,12 @@ span{
     .whoiam{
         margin-top: -250px;
         margin-left: 10px;
+    }
+    .em{
+        width: 200px;
+    }
+    .msg{
+        width: 300px;
     }
 }
                                             

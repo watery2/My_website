@@ -20,7 +20,7 @@
                 <li class="links"><p class="link">Contact</p></li>
             </ul>
         </div>
-        <div class="home">
+        <div id="home">
             <div class="img"><img src="{{url_for('static', filename='img/mypic.jpg')}}" alt="my pic"></div>
             <div class="whoiam">
                 <h2>Hello, my name is</h2>
@@ -34,6 +34,23 @@
             <div class="line"></div>
             <p class="abouttext">I am Dominyk Orlov. Born and live in Lithuania. Since im in lockdown i made this website about me. So enjoy my greatness.</p>
         </section>
+        <div id="contact">
+            <form class="form">
+                <h1 style="color: white;">Contact Me</h1>
+                <input class="em" type="email" placeholder="Email" name="email"><br>
+                <textarea class="msg" type="text" placeholder="Message"></textarea><br>
+                <input class="sub" type="submit" value="Send">
+            </form>
+        </div>
+        <div id="footer">
+            <ul class="flinks">
+                <li class="flinks"><p class="flink">Home</p></li>
+                <li class="flinks"><p class="flink">About</p></li>
+                <li class="flinks"><p class="flink">Contact</p></li>
+            </ul>
+            <p style="margin-top: 10px;"> Copyright &copy; 2021 Dominyk orlov</p>
+            <a href="https://github.com/watery2" target="_blank"><img src="{{url_for('static', filename='img/githubimg.png')}}" alt="github Logo" style="width: 50px; border-radius: 50%; margin-top: 10px;"></a>
+        </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
