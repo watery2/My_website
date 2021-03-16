@@ -8,9 +8,11 @@ def home():
     if request.method == "POST":
         email = request.form["email"]
         msg = request.form["Message"]
-        return redirect(request.url)
+        return redirect(url_for("sent"))
     return render_template("home.html")
 
-
+@app.route("/sent")
+def sent():
+    return render_template("sent.html")
 if __name__ == "__main__":
     app.run(debug=True)
